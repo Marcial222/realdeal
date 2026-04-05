@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'About';
+const description = 'About your blog.';
+const permalink = `${Astro.site.href}about`;
+---
+
+<BaseLayout title={title} description={description} permalink={permalink} current="about">
+  <div class="container">
+    <h1>About</h1>
+    <figure class="about-image">
+      <img src="/assets/editor.png" alt="The Cyclamen Press editor at work" width="500">
+    </figure>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+       ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus,</p>
+       <p>fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur. Quod.</p>
+      <p>Essent nec tamen id, cuius causa haec finxerat, assecutus est.
+         Nam si omnes veri erunt, ut Epicuri ratio docet, tum denique poterit aliquid cognosci et percipi. 
+         Quos qui tollunt et nihil posse percipi dicunt, ii remotis sensibus
+         ne id ipsum quidem expedire possunt, quod disserunt.</p>
+      <p>Praeterea sublata cognitione et scientia tollitur omnis
+         ratio et.</p>    
+      <p>Hoc melius nos veriusque quam Stoici. Illi enim negant esse bonum quicquam nisi nescio quam illam umbram, quod appellant honestum non tam solido 
+          quam splendido nomine, virtutem autem nixam hoc honesto nullam requirere voluptatem atque ad beate vivendum sapientia comparaverit, nihil esse maius amicitia, nihil uberius,</p>
+      <p>nihil iucundius. Nec vero hoc oratione solum, sed multo etiam magis, quod, cuius in.</p>
+  </div>
+</BaseLayout>
+
+<style>
+  .about-image {
+    float: right;
+    margin: -3em -7em 2em 2em;
+    max-width: 700px;
+  }
+
+  .about-image img {
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+  }
+
+  @media (max-width: 1020px) {
+    .about-image {
+      float: none;
+      margin: 0 auto 2em;
+    }
+  }
+</style>
